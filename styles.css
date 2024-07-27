@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: start;
+    padding: 30px;
+}
+
+.logo-container img {
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%; /* Ajustei para 100% para ocupar todo o espaço disponível */
+    max-width: 600px; /* Adicionei um max-width para garantir que não fique muito largo em telas grandes */
+    height: 500px;
+}
+
+.container_principal {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 95%;
+    max-width: 1200px; /* Adicionei um max-width para garantir que o layout fique dentro de uma largura razoável */
+}
+
+textarea {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #0A3871;
+    ;
+    color: white;
+    transition: background-color 0.3s;
+}
+.button-container {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+
+button:hover {
+    background-color: #555;
+}
+
+#outputText {
+    background: url('asserts/menino.svg') no-repeat center center;
+    background-size: contain;
+    padding: 10px;
+    resize: none;
+}
+
+/* Esconder a imagem de fundo quando o textarea tem texto */
+#outputText:focus, 
+#outputText:valid {
+    background: none;
+}
+
+#outputText.has-text {
+    background: none;
+}
